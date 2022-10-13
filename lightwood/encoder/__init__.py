@@ -4,6 +4,7 @@ from lightwood.encoder.datetime.datetime import DatetimeEncoder
 from lightwood.encoder.datetime.datetime_sin_normalizer import DatetimeNormalizerEncoder
 from lightwood.encoder.image.img_2_vec import Img2VecEncoder
 from lightwood.encoder.numeric.numeric import NumericEncoder
+from lightwood.encoder.numeric.numeric_normalizer import NumericNormalizerEncoder
 from lightwood.encoder.numeric.ts_numeric import TsNumericEncoder
 from lightwood.encoder.array.ts_num_array import TsArrayNumericEncoder
 from lightwood.encoder.text.short import ShortTextEncoder
@@ -20,7 +21,7 @@ from lightwood.encoder.text.pretrained import PretrainedLangEncoder
 from lightwood.encoder.audio import MFCCEncoder
 
 
-__all__ = ['BaseEncoder', 'DatetimeEncoder', 'Img2VecEncoder', 'NumericEncoder', 'TsNumericEncoder',
+__all__ = ['BaseEncoder', 'DatetimeEncoder', 'Img2VecEncoder', 'NumericEncoder', 'NumericNormalizerEncoder', 'TsNumericEncoder',
            'TsArrayNumericEncoder', 'ShortTextEncoder', 'VocabularyEncoder', 'TextRnnEncoder', 'OneHotEncoder',
            'CategoricalAutoEncoder', 'TimeSeriesEncoder', 'ArrayEncoder', 'MultiHotEncoder', 'TsCatArrayEncoder',
            'NumArrayEncoder', 'CatArrayEncoder',
